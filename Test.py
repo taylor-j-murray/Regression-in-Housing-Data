@@ -10,15 +10,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.pipeline import Pipeline
 
-X = pd.DataFrame({'A': [1,5,3], 'B': [1,np.nan,1]})
+Xset = pd.Series()
 
-chosen_features = ['A', 'B']
-column_to_replacement = {'A' : 0, 'B': 0}
-estimators = [ ('choose_columns', preprocessing.ChooseFeatures(chosen_features)),('replace_na', preprocessing.ReplaceNA(column_to_replacement))]
-pipe = Pipeline(estimators)
+Xset['num1'] =1
 
-new_X = pipe.fit_transform(X)
-print(new_X)
-print(X)
-
-X
+Xset
