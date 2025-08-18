@@ -1,4 +1,4 @@
-`final.ipbynb` is a end to end Jupyter Notebook presentation on EDA and Machine learning modeling/performace 
+`final.ipbynb`  features an end to end ML project. Consists of a Jupyter Notebook presentation on EDA and Machine learning modeling/performace 
 on predicticing housing prices using the Kaggle data set: https://www.kaggle.com/datasets/austinreese/usa-housing-listings 
 
 `preprocessing.py` consists of a number of custom made preprocessing functions.
