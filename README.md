@@ -6,7 +6,7 @@ We quickly noted some key takeaways from `final.ipbynb`:
 **Objective:** predict prices from structured housing data through engineered features and the XGBoost Regression model.
 
 **Final Performance:** 
-|   Data    | Relative RMSE Score | $$R^2$$ Score|
+|   Data    | Relative RMSE Score | R2 Score|
 |:--------:|:---------------:|:--------:|
 |Training| 11.03% | 0.8769|
 |Cross-Validated | 12.94%|0.8273|
