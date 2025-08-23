@@ -1,7 +1,7 @@
 `final.ipbynb`  features an end to end ML project. Consists of a Jupyter Notebook presentation on EDA and Machine learning modeling/performace 
 on predicticing housing prices using the Kaggle data set: https://www.kaggle.com/datasets/austinreese/usa-housing-listings
 
-We quickly noted some key takeaways from `final.ipbynb`:
+We quickly note some key takeaways from `final.ipbynb`:
 
 **Objective:** predict prices from structured housing data through engineered features and the XGBoost Regression model.
 
