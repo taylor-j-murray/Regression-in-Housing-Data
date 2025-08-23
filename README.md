@@ -16,6 +16,6 @@ We quickly note some key takeaways from `final.ipbynb`:
 
 `preprocessing.py` consists of a number of custom made preprocessing functions.
 
-`taylor_pipes.py` consists of custom made pipeline estimators compatible with scikit-learn.
+`taylors_pipes.py` consists of custom made pipeline estimators compatible with scikit-learn.
 
 `utilities.py` consists of a custom made function for splitting data into testing and training data.
