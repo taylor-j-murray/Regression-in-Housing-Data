@@ -8,10 +8,10 @@ We quickly note some key takeaways from `final.ipbynb`:
 **Final Performance:** 
 |   Data     | $R^2$ Score|
 |:--------:|:--------:|
-|Training|  0.87580|
-|Testing|  |0.82307|
+|Training|  0.872128|
+|Testing| 0.827721|
 
-Our final models $R^2$ score indicates that the model accounts for approximately 82.31% of the total variation in housing price for this data set.
+Our final models $R^2$ score indicates that the model accounts for approximately 82.28% of the total variation in housing price for this data set.
 
 `preprocessing.py` consists of a number of custom made preprocessing functions.
 
