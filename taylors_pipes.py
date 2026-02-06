@@ -216,9 +216,10 @@ class Scale(BaseEstimator,TransformerMixin):
     
 class OneHotEncode(BaseEstimator,TransformerMixin):
     
-    def __init__(self, col : str, drop : bool):
+    def __init__(self, col : str, drop : bool, drop_first :bool):
         self.col = col
         self.drop = drop
+        self.drop_first = drop_first  # drop first dummy for collinearity
         
     def fit(self, X : pd.DataFrame, y: pd.Series):
         if self.col not in X.columns:
@@ -244,6 +245,10 @@ class OneHotEncode(BaseEstimator,TransformerMixin):
         
         
         if self.drop:
-            X = X.drop(columns = [self.col])
+            X = X.drop(columns=[self.col])
+    
+        if self.drop_first:
+            first_dummy = f'{self.col}_{self.categories[0]}'
+            X = X.drop(columns=[first_dummy])
         
         return X

@@ -19,7 +19,7 @@ def hash_to_value(value):
 # More over MD5 distributes inputs uniformly and randomly over its output range. This allows us to use test_size = 0.2
 # in the function split below with certainty that the test set will have size roughly 20% of the original.
 
-def split(df, id_column, test_size = 0.2, id_index = True):
+def split(df : pd.DataFrame, id_column, test_size = 0.2, id_index = True):
     df = df.copy() # Avoids modifying the dataframe
     df['hash_value'] =  df[id_column].apply(hash_to_value) # Creates a new column called 'hash_value' that applies hash_to_value to every element in the id_column
     if id_index:
@@ -27,6 +27,7 @@ def split(df, id_column, test_size = 0.2, id_index = True):
     else:
         pass
     test_mask = df['hash_value'] < test_size # Creates a mask (i.e a boolean array) picking out the instances whose hash_value is less than test_size
+    df = df.drop(columns='hash_value')
     test_set = df[test_mask] # returns a subset of the dataset whose instances have hash_value < test_size
     train_set = df[~test_mask] # returns a subset of the dataset whose instances have hash_value >= test_size
     return test_set, train_set
