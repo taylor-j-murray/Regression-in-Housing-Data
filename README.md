@@ -3,16 +3,15 @@ on predicticing housing prices using the Kaggle data set: https://www.kaggle.com
 
 We quickly note some key takeaways from `final.ipbynb`:
 
-**Objective:** predict prices from structured housing data through engineered features and the XGBoost Regression model.
+**Objective:**  predict prices from structured housing data.
 
 **Final Performance:** 
-|   Data    | Relative RMSE Score | $R^2$ Score|
-|:--------:|:---------------:|:--------:|
-|Training| 11.03% | 0.8769|
-|Cross-Validated | 12.94%|0.8273|
-|Testing| 12.96% |0.8241|
+|   Data     | $R^2$ Score|
+|:--------:|:--------:|
+|Training|  0.87580|
+|Testing|  |0.82307|
 
-Our final models $R^2$ score indicates that the model accounts for 82.41% of the total variation in housing price.
+Our final models $R^2$ score indicates that the model accounts for approximately 82.31% of the total variation in housing price for this data set.
 
 `preprocessing.py` consists of a number of custom made preprocessing functions.
 
